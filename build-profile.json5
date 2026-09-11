@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/aether/.ohos/config/default_HarmonyApp_lXNFBIYFxh0xsm0uKDWXz0piaIxfPK62tApTt3TAZ-I=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BCA7D5F5B52ADAC11149A48848102CA94FFBB02841E16A86CFD2FF9AFDF868F0B1CB110A5AA2B72",
+          "profile": "/Users/aether/.ohos/config/default_HarmonyApp_lXNFBIYFxh0xsm0uKDWXz0piaIxfPK62tApTt3TAZ-I=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/aether/.ohos/config/default_HarmonyApp_lXNFBIYFxh0xsm0uKDWXz0piaIxfPK62tApTt3TAZ-I=.p12",
+          "storePassword": "0000001BDE35D0AFF1F9C8F21623E98144B598D7C296F1CCB900B49C1ADD92060D2F2DE54FAEA8D8ECCCDA"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "26.0.0",
+        "compatibleSdkVersion": "6.1.1(24)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
