@@ -1,23 +1,35 @@
+import { batteryInfo } from '@kit.BasicServicesKit';
+
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World';
+  @State level: number = 0;
+  @State isCharging: boolean = false;
+
+  aboutToAppear() {
+    // 读取当前电量
+    this.level = batteryInfo.batterySOC;
+    // 读取充电状态
+    this.isCharging =
+      batteryInfo.chargingStatus === batteryInfo.BatteryChargeState.ENABLE ||
+        batteryInfo.chargingStatus === batteryInfo.BatteryChargeState.FULL;
+  }
 
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('HelloWorld')
-        .fontSize($r('app.float.page_text_font_size'))
+    Column() {
+      Text(`${this.level}%`)
+        .fontSize(64)
         .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
-        .onClick(() => {
-          this.message = 'Welcome';
-        })
+        .fontColor(this.level > 20 ? '#4CAF50' : '#F44336')
+
+      Text(this.isCharging ? '⚡ 充电中' : '未充电')
+        .fontSize(18)
+        .fontColor('#999999')
+        .margin({ top: 12 })
     }
-    .height('100%')
     .width('100%')
+    .height('100%')
+    .justifyContent(FlexAlign.Center)   // 垂直居中
+    .alignItems(HorizontalAlign.Center) // 水平居中
   }
 }

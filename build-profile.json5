@@ -5,13 +5,13 @@
         "name": "default",
         "type": "HarmonyOS",
         "material": {
-          "certpath": "/Users/aether/.ohos/config/default_HarmonyApp_lXNFBIYFxh0xsm0uKDWXz0piaIxfPK62tApTt3TAZ-I=.cer",
+          "certpath": "C:\\Users\\user\\.ohos\\config\\default_HarmonyApp__sfjW0mRyxr9R5ukjr0uVtfxWtrH7xnCudcqOiFaXVE=.cer",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001BCA7D5F5B52ADAC11149A48848102CA94FFBB02841E16A86CFD2FF9AFDF868F0B1CB110A5AA2B72",
-          "profile": "/Users/aether/.ohos/config/default_HarmonyApp_lXNFBIYFxh0xsm0uKDWXz0piaIxfPK62tApTt3TAZ-I=.p7b",
+          "keyPassword": "0000001BB9E5AD6FEB0CDEB719899C1FA2B32020AA1D01AF87CFA68B3BAA9391EB388CBA07F959747B411D",
+          "profile": "C:\\Users\\user\\.ohos\\config\\default_HarmonyApp__sfjW0mRyxr9R5ukjr0uVtfxWtrH7xnCudcqOiFaXVE=.p7b",
           "signAlg": "SHA256withECDSA",
-          "storeFile": "/Users/aether/.ohos/config/default_HarmonyApp_lXNFBIYFxh0xsm0uKDWXz0piaIxfPK62tApTt3TAZ-I=.p12",
-          "storePassword": "0000001BDE35D0AFF1F9C8F21623E98144B598D7C296F1CCB900B49C1ADD92060D2F2DE54FAEA8D8ECCCDA"
+          "storeFile": "C:\\Users\\user\\.ohos\\config\\default_HarmonyApp__sfjW0mRyxr9R5ukjr0uVtfxWtrH7xnCudcqOiFaXVE=.p12",
+          "storePassword": "0000001B69EBC9A6CB435DC86FC38C7CD0A1AB906A95C723F0AA27D97F921D285E6C7DFCE49C488CA90B2D"
         }
       }
     ],
